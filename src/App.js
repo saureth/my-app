@@ -1,4 +1,5 @@
-import './App.css';
+//import './App.css';
+import './main.css';
 
 const estilo = ({bg='#222'}) =>({
   backgroundColor: bg,
@@ -13,13 +14,13 @@ const estilo2 = {
 
 const Li = ({children})=>{
   return (
-    <li style={{...estilo2,...estilo({bg: '#333'})}} className="clase-li">{children}</li>
+    <li className="clase-li">{children}</li>
   );
 };
 
 const App = () => {
   return (
-    <ul style={estilo({bg:'#750'})} className="clase-css">
+    <ul className="clase-css">
       <Li estado="feliz">Valor de li</Li>
     </ul>
   );
